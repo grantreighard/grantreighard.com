@@ -57,10 +57,10 @@
 						<div class="inner">
 							<div class="logo"><span class="icon fa-code"></span></div>
 							<h2 class="myName">Grant Reighard</h2>
-							<p>Software Engineer, graduate of Lambda School, BA Film and Media Arts</p>
+							<p>Full-Stack Developer, BA Film and Media Arts</p>
 							<div class="picAndText">
 								<img src="images/grant.jpeg" width="300" height="300" class="myImage"/>
-								<p class="myText">Hello, world. My name is Grant. I am a Full Stack Developer at <a href="https://www.clarityinnovates.com/" target="_blank">Clarity Innovations</a>. I am a graduate of <a href="https://www.lambdaschool.com" target="_blank">Lambda School</a>, which is an online computer science academy covering web development, Computer Science topics, and languages such as HTML, CSS, JavaScript, C, and Python. Web development is a 15-week curriculum, Computer Science is a 10-week curriculum, and the program ends with a 5-week capstone project called Lambda Labs.</p>
+								<p class="myText">Hello, world. My name is Grant. I am a Full-Stack Developer at <a href="https://www.clarityinnovates.com/" target="_blank">Clarity Innovations</a>. I am a graduate of <a href="https://www.lambdaschool.com" target="_blank">Lambda School</a> (now Bloom Tech), which is an online computer science academy covering web development, Computer Science topics, and languages such as HTML, CSS, JavaScript, C, and Python. Web development is a 15-week curriculum, Computer Science is a 10-week curriculum, and the program ends with a 5-week capstone project called Lambda Labs.</p>
 							</div>
 						</div>
 					</section>
@@ -180,7 +180,7 @@
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
-							<p>Feel free to get in contact with me if you'd like a copy of my resume or have any questions for me. If you'd like to hire me, that's great, too! Just fill out this form and I'll get back to you as soon as I can.</p>
+							<!-- <p>Feel free to get in contact with me if you'd like a copy of my resume or have any questions for me. If you'd like to hire me, that's great, too! Just fill out this form and I'll get back to you as soon as I can.</p>
 							<form method="post" action="mailto:grant.reighard@gmail.com" enctype="text/plain">
 								<div class="fields">
 									<div class="field">
@@ -199,11 +199,11 @@
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
-							</form>
+							</form> -->
 							<ul class="contact">
 								<li class="fa-home">
 									Grant Reighard<br />
-									Maryland, USA
+									Pennsylvania, USA
 								</li>
 								<li class="fa-phone">(215) 407-3758</li>
 								<li class="fa-envelope"><a href="mailto:grant.reighard@gmail.com" target="_blank">grant.reighard@gmail.com</a></li>
@@ -212,7 +212,7 @@
 								<li class="fa-twitter"><a href="https://www.twitter.com/GrantReighard" target="_blank">@GrantReighard</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; 2021 Grant Reighard. All rights reserved.</li>
+								<li>&copy; <span id="copyright-year"></span> Grant Reighard. All rights reserved.</li>
 							</ul>
 						</div>
 					</section>
@@ -226,6 +226,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+			</script>
 
 	</body>
 </html>
